@@ -1,10 +1,14 @@
+
+
+##come back and add menu and CLI arguments.
+
 def main():
     global book_path, text, num_words, num_letters, results, result_dict
-    book_path = "books/frankenstein.txt"                                    #this is where the input file is located
-    text = get_book_text(book_path)                                         #reads the input file
-    num_words = get_num_words(text)                                         #works out word count
-    num_letters, letters_main_dict = get_num_letters(text)                  #returns the number of letters, and a dictionary include the count of each letter
-    result_dict = [{'letter': key, 'number': value} for key, value in letters_main_dict.items()] #puts the dictionary with the counts into a list and gives it "letter" and "number" keys
+    book_path = "books/frankenstein.txt"
+    text = get_book_text(book_path)
+    num_words = get_num_words(text)
+    num_letters, letters_main_dict = get_num_letters(text)
+    result_dict = [{'letter': key, 'number': value} for key, value in letters_main_dict.items()]
 
     report(text)
 
